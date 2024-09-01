@@ -1,3 +1,30 @@
+const customCursor = () =>
+{
+
+    let det = document.querySelector( ".cursor-dot" );
+    let outline = document.querySelector( ".cursor-outline" );
+
+    window.addEventListener( "mousemove", function ( event )
+    {
+        const posX = event.clientX;
+        const posY = event.clientY;
+
+        det.style.left = `${ posX }px`;
+        det.style.top = `${ posY }px`;
+
+        outline.animate(
+            {
+                left: `${ posX }px`,
+                top: `${ posY }px`
+            },
+            { duration: 500, fill: "forwards" }
+        );
+    } );
+};
+
+customCursor()
+
+
 //loader animation
 var tl = gsap.timeline();
 

@@ -12,6 +12,9 @@
     <title>AORUS. Team Up. Fight On. ∣ AORUS - GIGABYTE Global</title>
 </head>
 <body>
+    <!-- custom cursor? -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <div class="loader">
         <div class="loader-overlay"></div>
         <video autoplay muted src="videos\loader-video.mp4"></video>
@@ -25,28 +28,31 @@
     </div>
     <video class="homepage-bg" autoplay loop muted src="videos\background-homepage.mp4"></video>
     <div class="main">
-        <div class="subscribe">
-        <div class="subscribe-face">
-            <img src="images\subscribe2.94fa63ee.svg" alt="">
-            <h3>subscribe</h3>
-        </div>
-        <div class="subscribe-body">
-            <div class="side-section">
-                <h5>subscribe us</h5>
-                <div class="underline"></div>
-            </div>
-            <div class="right">
-            <h2>GET THE LATEST NEWS FROM GIGABYTE AORUS.</h2>
-            <div class="subscribe-bar">
-                <div class="left">
-                    <input type="text">
+        <form action="https://formspree.io/f/mwpeyjqe"
+        method="POST">
+            <div class="subscribe">
+                <div class="subscribe-face">
+                    <img src="images\subscribe2.94fa63ee.svg" alt="">
+                    <h3>subscribe</h3>
                 </div>
-                <div class="right">subscribe<i class="ri-arrow-right-s-fill"></i></div>
+                <div class="subscribe-body">
+                    <div class="side-section">
+                        <h5>subscribe us</h5>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="right">
+                    <h2>GET THE LATEST NEWS FROM GIGABYTE AORUS.</h2>
+                    <div class="subscribe-bar">
+                        <div class="left">
+                            <input type="text" name="name" placeholder="Tharu Niraj" autocomplete="off" required>
+                        </div>
+                        <div class="right"><button type="submit">subscribe</button><i class="ri-arrow-right-s-fill"></i></div>
+                    </div>
+                    </div>
+                    <i class="ri-close-large-fill"></i>
+                </div>
             </div>
-            </div>
-            <i class="ri-close-large-fill"></i>
-        </div>
-    </div>
+        </form>
         <div class="page1">
             <nav>
                 <div class="nav-left">
